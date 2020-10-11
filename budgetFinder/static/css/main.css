@@ -1,0 +1,241 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;900&display=swap");
+* {
+  box-sizing: border-box; }
+
+html, body {
+  font-family: 'Lato', sans-serif;
+  margin: 0;
+  padding: 0;
+  -webkit-font-smoothing: antialiased; }
+
+.clearfix:before, .clearfix:after {
+  content: " ";
+  display: table; }
+
+.clearfix:after {
+  clear: both; }
+
+::placeholder {
+  color: rgba(255, 255, 255, 0.6); }
+
+:-ms-input-placeholder {
+  color: rgba(255, 255, 255, 0.6); }
+
+::-ms-input-placeholder {
+  color: rgba(255, 255, 255, 0.6); }
+
+.header {
+  max-width: 90%;
+  margin: 4em auto;
+  margin-bottom: 6em;
+  display: flex;
+  justify-content: space-between; }
+  .header .banner_wrapper h1 {
+    margin: 0;
+    font-size: 2em; }
+  .header .banner_wrapper p {
+    margin: 0;
+    font-size: 1.1em; }
+  .header .button_wrapper {
+    margin-top: 1.2em; }
+    .header .button_wrapper .button {
+      background-color: #3E3EBC;
+      color: #FFFFFF;
+      border-radius: 3em;
+      padding: .9em 5em;
+      border-style: none;
+      font-weight: 700;
+      text-decoration: none;
+      transition: 0.3s; }
+      .header .button_wrapper .button:hover {
+        background-color: #456EFE; }
+
+.form {
+  background-color: #3E3EBC;
+  border-radius: 2em 2em 0 0;
+  color: #FFFFFF; }
+  .form .input {
+    display: flex;
+    margin-left: 5%;
+    padding-top: 3em; }
+    .form .input .revenue, .form .input .expenses {
+      width: 50%;
+      margin: 0;
+      padding: 0; }
+      .form .input .revenue h2, .form .input .expenses h2 {
+        margin-bottom: 2em; }
+      .form .input .revenue label, .form .input .expenses label {
+        display: inline-block;
+        float: left;
+        width: 150px;
+        text-align: left;
+        margin-top: .8em; }
+      .form .input .revenue input, .form .input .expenses input {
+        background-color: #3E3EBC;
+        border: 2px solid #FFFFFF;
+        border-radius: .3em;
+        height: 2.4em;
+        width: 50%;
+        padding: 1.3em 1em;
+        color: #FFFFFF;
+        margin-left: 9%;
+        margin-right: 9%; }
+      .form .input .revenue .all_inputs, .form .input .expenses .all_inputs {
+        margin: 1.2em 0; }
+  .form .submition {
+    display: flex;
+    justify-content: center;
+    text-align: center; }
+    .form .submition .submit {
+      background-color: #59D199;
+      color: #FFFFFF;
+      border-radius: 3em;
+      padding: .9em 6em;
+      border-style: none;
+      font-weight: 700;
+      margin-top: 5em;
+      transition: 0.3s; }
+      .form .submition .submit:hover {
+        background-color: #FFFFFF;
+        color: #3E3EBC; }
+    .form .submition p {
+      font-size: .5em;
+      padding: 1em 0 17em 0; }
+
+#all {
+  background-color: #3E3EBC; }
+
+.header2 {
+  max-width: 90%;
+  margin: 4em auto;
+  margin-bottom: 6em;
+  display: flex;
+  justify-content: space-between; }
+  .header2 .banner_wrapper h1 {
+    color: #FFFFFF;
+    margin: 0;
+    font-size: 2em; }
+  .header2 .banner_wrapper p {
+    color: #FFFFFF;
+    font-size: 1.1em; }
+
+.button_wrapper, #text_box {
+  margin-top: 1.2em; }
+  .button_wrapper .button2, #text_box .button2 {
+    background-color: #FFFFFF;
+    color: #3E3EBC;
+    border-radius: 3em;
+    padding: .9em 5em;
+    border-style: none;
+    font-weight: 700;
+    text-decoration: none;
+    transition: 0.3s; }
+    .button_wrapper .button2:hover, #text_box .button2:hover {
+      background-color: #E6ECFF; }
+
+.button_wrapper2 {
+  margin-top: 3em;
+  zoom: .8; }
+  .button_wrapper2 .back {
+    margin-right: .5em; }
+  .button_wrapper2 .share {
+    margin-left: .5em; }
+
+#wrap {
+  padding: 0;
+  overflow: hidden;
+  display: flex;
+  justify-content: center; }
+  #wrap #shocked_reaction {
+    max-width: 90%;
+    max-height: 50%;
+    margin: -1em 0;
+    border: 0px;
+    zoom: 2;
+    float: center; }
+
+#text_box {
+  color: #FFFFFF;
+  margin: 0 auto;
+  width: 90%;
+  text-align: center;
+  margin-bottom: 5em; }
+  #text_box .negative_result {
+    margin-top: 1em;
+    border: 2px solid #FFFFFF;
+    padding: 0 1em; }
+  #text_box h1 {
+    font-size: 4em;
+    margin: .2em 0 0 0; }
+
+#body {
+  background-color: #3E3EBC; }
+
+#footer1 p {
+  text-align: center;
+  font-size: .7em;
+  margin-top: 1.5em; }
+
+#footer2 p {
+  color: #FFFFFF;
+  text-align: center;
+  font-size: .7em;
+  margin-top: 1.5em; }
+
+@media only screen and (max-width: 1000px) {
+  .form .input {
+    display: block; }
+    .form .input .revenue, .form .input .expenses {
+      width: 100%; }
+    .form .input .expenses {
+      margin-top: 5em; }
+  .form .submition p {
+    padding: 1em 0 8em 0; }
+  #wrap #shocked_reaction {
+    margin: -2em 0; } }
+
+@media only screen and (max-width: 730px) {
+  .header, .header2 {
+    display: block;
+    text-align: center;
+    margin-bottom: 3em; }
+    .header .button_wrapper, .header2 .button_wrapper {
+      margin-top: 50px; }
+  #text_box h1 {
+    font-size: 3em; } }
+
+@media only screen and (max-width: 500px) {
+  .form .input {
+    display: block;
+    justify-content: center;
+    text-align: center; }
+    .form .input .revenue h2, .form .input .expenses h2 {
+      text-align: center; }
+    .form .input .revenue .all_inputs, .form .input .expenses .all_inputs {
+      margin: 1em 0;
+      display: flex;
+      flex-direction: column-reverse;
+      align-items: center; }
+    .form .input .revenue label, .form .input .expenses label {
+      float: center;
+      text-align: center;
+      width: 150px;
+      margin-top: 0em;
+      font-size: 1.3em;
+      margin-bottom: .5em; }
+    .form .input .revenue input, .form .input .expenses input {
+      text-align: center;
+      width: 70%; }
+  #wrap #shocked_reaction {
+    margin: -4em 0;
+    max-height: 20%; }
+  #text_box {
+    margin: 0 auto; }
+    #text_box h1 {
+      margin-top: .5em;
+      font-size: 2.5em; }
+  .button_wrapper2 {
+    display: flex;
+    flex-direction: column; }
+    .button_wrapper2 .back, .button_wrapper2 .share {
+      margin: 1em 0 0 0; } }

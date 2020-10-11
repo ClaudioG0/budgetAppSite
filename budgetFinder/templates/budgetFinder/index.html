@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Personal Budgeting</title>
+
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+
+	<link rel="stylesheet" href="../../../static/css/main.css">
+
+
+	<link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;900&display=swap" rel="stylesheet">
+
+</head>
+<body>
+	<header class="header">
+		<div class="banner_wrapper">
+			<h1>Are you overspending?</h1>
+			<p class="brand_statement">Here is a way to find out!</p>
+		</div>
+		<div class="button_wrapper">
+			<a href="#" class="button">Buy us a coffee</a>
+		</div>
+	</header>
+	<form action="{{page}}" method="post"  class="form"> <!-- action - overspending.html -->
+		{% csrf_token %}
+		<section class="input">
+			<div class="revenue">
+				<h2>Income</h2>
+
+				<div class="all_inputs">
+					{{formRev.saving}}
+					<label for="savings">Savings</label><br>
+				</div>
+
+				<div class="all_inputs">
+					{{formRev.salary}}
+					<label for="salary">Salary</label><br>
+				</div>
+
+				<div class="all_inputs">
+					{{formRev.investment}}
+					<label for="investment">Investments</label><br>
+				</div>
+
+				<div class="all_inputs">
+					{{formRev.other_income}}
+					<label for="other_income">Other income</label><br>
+				</div>
+			</div>
+
+			<div class="expenses">
+				<h2>Expenses</h2>
+
+				<div class="all_inputs">
+					{{formExp.rent}}
+					<label for="rent">Rent</label><br>
+				</div>
+
+				<div class="all_inputs">
+					{{formExp.food}}
+					<label for="Food">Food</label><br>
+				</div>
+
+				<div class="all_inputs">
+					{{formExp.entertainment}}
+					<label for="entertaintment">Entertaintment</label><br>
+				</div>
+					
+				<div class="all_inputs">
+					{{formExp.other_expenses}}
+					<label for="other_expenses">Other expenses</label><br>
+				</div>
+			</div>
+		</section>
+
+		<section class="submition">
+			<div class="wrapper">
+
+				<input type="submit" name="submit" class="submit" value="Check*">
+				<p class="disclaimer">*We do not store any information provided</p>
+			</div>
+		</section>
+	</form>
+	<footer id="footer1">
+		<p>Made by Sergo and Leo</p>
+	</footer>
+</body>
+</html>
